@@ -15,6 +15,10 @@
     "noUnusedLocals": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "es2022"
+    "target": "es2022",
+    "baseUrl": ".",
+    "paths": {
+      "@packages/*": ["packages/*/src/index.ts"] // Adjusted to point to the index files of packages
+    }
   }
 }
