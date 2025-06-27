@@ -11,6 +11,18 @@
     },
     {
       "path": "./apps/api-gateway"
+    },
+    {
+      "path": "./packages/config"
+    },
+    {
+      "path": "./packages/middlewares"
+    },
+    {
+      "path": "./packages/loggers"
+    },
+    {
+      "path": "./packages/errors"
     }
   ]
 }

@@ -1,9 +1,9 @@
 import { Application } from "express";
 import { createProxyMiddleware, Options } from "http-proxy-middleware";
 import { config } from ".";
-import { AppLogger } from "../../../../packages/loggers/src";
+import { AppLogger } from "@packages/loggers";
 import { ProxyErrorResponse, ServiceConfig } from "../types";
-import { Http } from "../../../../packages/config/src";
+import { Http } from "@packages/config";
 
 class ServiceProxy {
   private static readonly serviceConfigs: ServiceConfig[] = [

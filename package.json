@@ -6,7 +6,10 @@
     "dev": "nx run-many --target=serve --all",
     "daemon:ensure": "nx daemon --status || nx daemon --start",
     "daemon:start": "nx daemon --start",
-    "daemon:stop": "nx daemon --stop"
+    "daemon:stop": "nx daemon --stop",
+    "build": "tsc --build",
+    "clean": "tsc --build --clean",
+    "typecheck": "tsc --build --emitDeclarationOnly"
   },
   "private": true,
   "dependencies": {
@@ -58,6 +61,7 @@
     "webpack-cli": "^5.1.4"
   },
   "workspaces": [
-    "apps/*"
+    "apps/*",
+    "packages/*"
   ]
 }

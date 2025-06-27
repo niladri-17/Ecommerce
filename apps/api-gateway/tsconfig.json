@@ -1,8 +1,28 @@
 {
   "extends": "../../tsconfig.base.json",
+    "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "baseUrl": ".",
+    "tsBuildInfoFile": "dist/tsconfig.tsbuildinfo"
+  },
   "files": [],
-  "include": [],
+  "include": [
+    "src/**/*"
+  ],
   "references": [
+    {
+      "path": "../../packages/middlewares"
+    },
+    {
+      "path": "../../packages/loggers"
+    },
+    {
+      "path": "../../packages/errors"
+    },
+    {
+      "path": "../../packages/config"
+    },
     {
       "path": "./tsconfig.app.json"
     }

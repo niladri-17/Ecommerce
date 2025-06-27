@@ -6,12 +6,25 @@
       "node",
       "express"
     ],
-    "rootDir": "../../", // originally "src",
+    "rootDir": "src",
     "tsBuildInfoFile": "dist/tsconfig.app.tsbuildinfo"
   },
   "include": [
-    "src/**/*.ts",
-    "../../packages/**/*.ts", // added to include shared packages (originally not there)
+    "src/**/*.ts"
   ],
-  "exclude": []
+  "exclude": [],
+  "references": [
+    {
+      "path": "../../packages/middlewares"
+    },
+    {
+      "path": "../../packages/loggers"
+    },
+    {
+      "path": "../../packages/errors"
+    },
+    {
+      "path": "../../packages/config"
+    }
+  ]
 }

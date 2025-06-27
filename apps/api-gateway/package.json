@@ -2,6 +2,12 @@
   "name": "@./api-gateway",
   "version": "0.0.1",
   "private": true,
+  "dependencies": {
+    "@packages/config": "*",
+    "@packages/errors": "*",
+    "@packages/loggers": "*",
+    "@packages/middlewares": "*"
+  },
   "nx": {
     "name": "api-gateway",
     "targets": {
