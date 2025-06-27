@@ -13,7 +13,8 @@ module.exports = {
       tsConfig: './tsconfig.app.json',
       optimization: false,
       outputHashing: 'none',
-      generatePackageJson: true,
+      // generatePackageJson: true,
+      generatePackageJson: false, // Set to false to avoid generating package.json in dist to avoid Error: Pruned lock file creation failed. The following package was not found in the root lock file: @packages/config@* during the build process.
     })
   ],
 };
